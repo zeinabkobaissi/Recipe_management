@@ -2,7 +2,7 @@
 
 # 🍽️ AI-Powered Recipe Management System
 
-An intelligent Recipe Management System built using **Python, PostgreSQL, SQLAlchemy, and OpenAI Function Calling**.
+An intelligent Recipe Management System built using **Python, PostgreSQL, SQLAlchemy,Langgraph,and OpenAI Function Calling**.
 
 This application allows users to manage recipes using **natural language commands** powered by an AI agent.
 
@@ -26,6 +26,7 @@ The AI understands the intent, selects the correct backend function, executes it
 - Delete recipes
 - Retrieve all recipes
 - Search for a recipe
+- retrieve recipe
 
 Each recipe includes:
 - Title
@@ -47,7 +48,7 @@ This project uses OpenAI Function Calling to:
 3. Execute database operations
 4. Return a human-readable response
 
-The system implements a manual AI agent loop without using frameworks like LangChain.
+The system implements a manual AI agent loop using frameworks like LangChain and Langgraph.
 
 ---
 
@@ -59,7 +60,7 @@ OpenAI Model (gpt-4o-mini)
 ↓  
 Tool Call (Function Calling)  
 ↓  
-Backend CRUD Function  
+Langgraph Function  
 ↓  
 PostgreSQL Database  
 ↓  
@@ -74,6 +75,7 @@ Final Natural Language Response
 - Python 3.10+
 - PostgreSQL
 - SQLAlchemy ORM
+- Langgraph
 - OpenAI API (Function Calling)
 - Gradio (UI)
 
@@ -88,6 +90,7 @@ Defined AI tools:
 - delete_recipe
 - get_all_recipes
 - search_recipe
+- get_recipe_by_name
 
 Agent flow:
 
@@ -97,7 +100,7 @@ Agent flow:
 4. Tool result is sent back to the model
 5. Model generates final natural language reply
 
-This enables conversational CRUD operations over a relational database.
+This enables conversational operations over a relational database.
 
 ---
 
@@ -129,6 +132,7 @@ Example requirements:
 - sqlalchemy
 - psycopg2-binary
 - gradio
+- Langgraph
 - python-dotenv
 
 ## 4️⃣ Configure Environment Variables
@@ -191,10 +195,9 @@ Search for a recipe:
 Through this project:
 
 - Integrated AI with relational databases
-- Implemented OpenAI Function Calling
+- Implemented Langgraph Function Calling
 - Built a manual AI agent loop
 - Practiced SQLAlchemy ORM usage
-- Designed structured tool schemas
 - Connected AI to real backend services
 
 ---
@@ -205,7 +208,7 @@ Unlike traditional CRUD applications, this system allows conversational interact
 
 It demonstrates:
 - Practical AI integration
-- Backend engineering skills
+- Langgraph engineering skills
 - Database design
 - Understanding of AI agent architecture
 
