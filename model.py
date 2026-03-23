@@ -14,3 +14,4 @@ class Recipe(Base):
     cuisine_type = Column(String(50), nullable=False)
     preparation_time = Column(Integer, nullable=True)  # in minutes
     serving_size = Column(Integer, nullable=True)  # number of servings
+    
