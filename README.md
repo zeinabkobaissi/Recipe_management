@@ -1,4 +1,4 @@
-# Recipe_management
+# Recipe_GPT
 
 # 🍽️ AI-Powered Recipe Management System
 
